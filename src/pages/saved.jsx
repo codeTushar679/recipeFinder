@@ -14,7 +14,7 @@ function Saved() {
   return (
     <div className='flex flex-col justify-center items-center' >
       <h1 className='text-5xl font-bold text-gray-700 mt-10 mb-10 text-center' >Saved Recipes</h1>
-      <div className='grid grid-cols-4 gap-10 justify-center'>
+      <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-center'>
         {savedRecipes.length === 0 ? (
           <p className='text-2xl font-bold text-gray-700 mt-10 mb-10 text-center' >No saved recipes.</p>
         ) : (
