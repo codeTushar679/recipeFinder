@@ -18,9 +18,9 @@ function MealInfo() {
     return (
        <div>
         {!info ? 'data not found!' : 
-        <div className='flex p-20 mt-20' >
-            <img className='h-120 w-120 rounded-lg drop-shadow-xl' src={info.strMealThumb} alt={`${info.strMeal} image`} />
-            <div className='p-10 text-center items-center flex flex-col justify-center' >
+        <div className=' xl:items-center xl:flex xl:p-20 mt-2 sm:flex-col sm:p-10 ' >
+            <img className='xl:h-120 xl:w-120 rounded-lg drop-shadow-xl sm:h-100' src={info.strMealThumb} alt={`${info.strMeal} image`} />
+            <div className='xl:p-10 text-center items-center flex flex-col justify-center' >
             <h1 className='font-bold text-6xl mb-10 text-[#4B164C]' > {info.strMeal} </h1>
             <h3 className='font-bold text-2xl text-[#1A120B]'>Instructions:</h3>
             <p className='mb-10'>{info.strInstructions}</p>
